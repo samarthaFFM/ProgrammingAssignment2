@@ -1,16 +1,21 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
+## functions that caches the matrix inverse 
+
 ## Write a short comment describing this function
 
 # To create a special matrix object that can cache its inverse
 
 makeCacheMatrix <- function(x = matrix()) {
+        # create a null object
         m <- NULL
+        #set the matrix
         set <- function(y) {
                 x <<- y
                 m <<- NULL
         }
+        #get the matrix
         get <- function() x
         
         ## Method to set the inverse of the matrix
